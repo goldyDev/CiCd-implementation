@@ -10,6 +10,7 @@ const HomePage: React.FC = () => {
         <h1 className="text-4xl font-semibold text-center text-yellow-500 mb-6">
           Welcome to the Home Page
         </h1>
+        <p className="text-xl font-semibold text-center text-blue-500 mb-6">Let's see the magic of code</p>
         
         {/* Add Data Link */}
         {/* <Link
