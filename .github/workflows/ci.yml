@@ -32,5 +32,3 @@ jobs:
         run: |
           vercel --token=${{ secrets.VERCEL_TOKEN }}
           vercel login
-          vercel --prod --token=${{ secrets.VERCEL_TOKEN }} --yes
-          
