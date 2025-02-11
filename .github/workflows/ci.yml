@@ -30,6 +30,7 @@ jobs:
 
       - name: Deploy to Vercel
         run: |
-          vercel login --token=${{ secrets.VERCEL_TOKEN }}
+          echo "Token length: $(echo -n '${{ secrets.VERCEL_TOKEN }}' | wc -c)"
+          vercel login --token="${{ secrets.VERCEL_TOKEN }}"
           vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
           
